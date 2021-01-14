@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>796</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>811</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="DCycle">
+     <attribute name="title">
+      <string>Driving Cycle</string>
+     </attribute>
+     <widget class="QPushButton" name="ExportButton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>280</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Export Data</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSFuelcons">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>430</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>l/100km</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VehicleButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Vehicle</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="VeSpeedCheckB">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>330</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Vehicle Speed</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FuelConsLabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>430</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fuel Consuption</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CycleButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Cycle</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="RunButton">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>280</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Run Cycle</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CycleLine">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EngineButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>130</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Engine</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="VehicleLine">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>90</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FuelConsLine">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>430</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CutOffButton">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>180</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cut Off</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSCO2Eimsion">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>480</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>g/km</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="NOxEmissionLabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>530</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Specific NOx Emission</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="FuelConsCheckB">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>370</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fuel consumption</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CO2EmissLabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>480</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Specific CO2 Emission</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NOxEmissionLine">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>530</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSNOxEimsion">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>530</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>g/km</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CO2EmissLine">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>480</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="StartStopButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>180</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start  Stop</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="OperCheckB">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>330</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Operative Points</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EngineLine">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="EnergyCheckB">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>370</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Energy</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="NOxCheckB">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>370</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>NOx Emission</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="EngSpeedCheckB">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>330</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Engine Speed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EngineLine_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>130</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="NOxEmissionLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>530</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Specific NOx Emission</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CO2EmissLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>480</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Specific CO2 Emission</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="NOxEmissionLine_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>530</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSFuelcons_2">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>430</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>l/100km</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VehicleButton_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>90</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Vehicle</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FuelConsLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>430</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fuel Consuption</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="StartStopButton_2">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>180</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start  Stop</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CutOffButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>180</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cut Off</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CycleButton_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>50</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Cycle</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="VehicleLine_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>90</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSNOxEimsion_2">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>530</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>g/km</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CO2EmissLine_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>480</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CycleLine_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>50</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSCO2Eimsion_2">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>480</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>g/km</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FuelConsLine_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>430</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EngineButton_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>130</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load Engine</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vehicle1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>10</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vehicle2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>20</y>
+        <width>121</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>420</y>
+        <width>121</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ResetButton">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset Data</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ResetButton_2">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>230</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset Data</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="FWheel">
+     <attribute name="title">
+      <string>FlyWheel</string>
+     </attribute>
+     <widget class="QPushButton" name="LoadButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LoadLine">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>70</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CalcButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ExpButton">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>190</y>
+        <width>81</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Export Results</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Flywheel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+      <property name="buddy">
+       <cstring>tabWidget</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="DepthLine">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>380</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSFlDep">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>380</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>mm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FlDepLabel">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>380</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Flywheel Depth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FuelFlowLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Avg Fuel Flow</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FuelLine">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>280</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSFuelFlow">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>280</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>kg/s</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSBmep">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>320</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>bar</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BmepLine">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>320</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="UsEffLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Useful Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="BmepLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bmep</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSUsEff">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>360</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="UsEffLine">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>360</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSLimEff">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>400</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LimEffLine">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>400</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FillCoeffLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>520</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fill Coefficient</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LimEffLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>400</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limit Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="OrEffLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Organic Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TerFluEffLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>480</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Term Flu Efficiency</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSFillCoeff">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>520</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSOrEff">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>440</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSTerFluEff">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>480</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FillCoeffLine">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>520</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="OrgaEffLine">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>440</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TerMFluEffLine">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>480</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="EPressCheckB">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>420</y>
+        <width>101</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Engine Pressure</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="IndCycleCheckB">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>420</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ind Cycle</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="EffPressCheckB">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>460</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Effective Pressure</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="CTorqueCheckB">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>460</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cylinders' Torque</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="EngSpCheckB">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>540</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Engine Speed</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="EngWorkCheckB">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>500</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Engine Work</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="FouSpecCheckB">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>540</y>
+        <width>111</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fourier Spectrum</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="TTorqueCheckB">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>500</y>
+        <width>91</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Total Torque</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="DosageLabel">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>220</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Realtive Dosage</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="DispLine">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>100</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="DispLabel">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Displacement</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="SpeedLabel">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>140</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Speed</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TorqueLabel">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>180</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Torque</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSDosage">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>220</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSSpeed">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>140</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>rpm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSTorque">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>180</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nm</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SpeedLine">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>140</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="DosageLine">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>220</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TorqueLine">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>180</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSDisp">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;cm&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TestLabel">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Test Conditions</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSFlDia">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>330</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>mm</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="DiamLine">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>330</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="FlDiaLabel">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>330</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Flywheel Diameter</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>250</y>
+        <width>361</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ParamLabel">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>230</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Engine Parameters</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ResultsLable">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>280</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Results</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="DensLabel">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Material Density</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="IrrLabel">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Flywheel Irregul.</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="DensLine">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="IrrLine">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>150</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSIrr">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>150</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="MSDens">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>110</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;kg/m&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>796</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
