@@ -1,0 +1,5 @@
+This app calulates the vehicle NOx emission and the fuel consumption running any driving cycle or/and the dimensios
+of a engine flywheel, from the motor characteristics and its cyle pressure profile.
+
+To run, click on .exe file, if it triggers the antivirus program, just wait for the scan finishes.
+The files to load are in the folders Driving Cycle and FlyWheel.
